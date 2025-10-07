@@ -132,9 +132,9 @@ ESP32-CAM ← Serial TX/RX → Arduino UNO/Nano
 ## 🗂️ **Struktur File**
 📁 SmartDualZoneIrrigation
  - ├── Arduino_Controller/
- - │   └── SmartIrrigation_Arduino.ino
+ - │   └── TX_ARDUINO.ino
  - ├── ESP32_CAM_Controller/
- - │   └── SmartIrrigation_ESP32CAM.ino
+ - │   └── RX_ESP32_CAM.ino
  - ├── picture/
  - │   └── example_telegram_report.jpg
  - └── README.md
