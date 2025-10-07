@@ -109,6 +109,29 @@ ESP32-CAM ← Serial TX/RX → Arduino UNO/Nano
 
 ---
 
+## 📡 Komunikasi Data Serial Arduino → ESP32-CAM
+
+Komunikasi antar mikrokontroler menggunakan **Serial2 (UART)** di ESP32-CAM untuk menerima data dari **Arduino**.  
+Data dikirim dalam format teks dengan **simbol awal `#`** dan **simbol akhir berbeda untuk tiap jenis data**, sehingga ESP32-CAM dapat mem-parsing data dengan mudah.
+
+| Jenis Data                         | Simbol Awal | Simbol Akhir | Contoh  | Keterangan |
+|-----------------------------------|--------------|---------------|----------|-------------|
+| Status Tanah & Aktivitas Sistem   | `#` | `!` | `#3!` | Kode status untuk menentukan kondisi tanah & pompa |
+| Kelembaban Tanah Zona A (%)       | `#` | `@` | `#75.4@` | Persentase kelembaban tanah sawah A |
+| Kelembaban Tanah Zona B (%)       | `#` | `&` | `#68.2&` | Persentase kelembaban tanah sawah B |
+
+### 🧠 Penjelasan Alur Komunikasi
+
+1. **Arduino** membaca data sensor tanah dan menentukan kondisi sistem (kering, normal, pembuangan, dll).  
+2. Arduino mengirim data secara berurutan ke **ESP32-CAM** dengan format di atas.  
+3. **ESP32-CAM** mem-parsing data berdasarkan simbol akhir:
+   - `!` → Data status tanah  
+   - `@` → Kelembaban Tanah A  
+   - `&` → Kelembaban Tanah B  
+4. Setelah data lengkap diterima, ESP32-CAM memproses informasi tersebut dan **mengirim laporan kondisi sawah ke Telegram Bot**, lengkap dengan teks dan foto real-time.
+
+---
+
 ## 📸 **Contoh Pesan Telegram**
 ```yaml
 📊 Laporan Kondisi Sawah
