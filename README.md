@@ -40,20 +40,20 @@ Sistem terdiri dari dua perangkat utama:
 ---
 
 ## ⚙️ **Skema Sistem**
-📱 Telegram Bot
+- 📱 Telegram Bot
 ⬍
-🌐 WiFi + NTP
+- 🌐 WiFi + NTP
 ⬍
 ESP32-CAM ← Serial TX/RX → Arduino UNO/Nano
-↳ Sensor Tanah A (A0)
-↳ Sensor Tanah B (A1)
-↳ Sensor Air A (A2)
-↳ Sensor Air B (A3)
-↳ Pompa Utama (Relay D2)
-↳ Drain A (Relay D3)
-↳ Drain B (Relay D4)
-↳ Servo Valve (D5)
-↳ LCD I2C (SDA/SCL)
+- ↳ Sensor Tanah A (A0)
+- ↳ Sensor Tanah B (A1)
+- ↳ Sensor Air A (A2)
+- ↳ Sensor Air B (A3)
+- ↳ Pompa Utama (Relay D2)
+- ↳ Drain A (Relay D3)
+- ↳ Drain B (Relay D4)
+- ↳ Servo Valve (D5)
+- ↳ LCD I2C (SDA/SCL)
 
 ---
 
