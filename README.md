@@ -152,7 +152,7 @@ ESP32-CAM ← Serial TX/RX → Arduino UNO/Nano
 
 ---
 
- ## **Contacs us :** 
+ ## 👨‍💻 **Contacs us :** 
 * [Frendi RoboTech](https://www.instagram.com/frendi.co/)
 * [Whatsapp : +6287888227410](https://wa.me/+6287888227410)
 * [Email    : frendirobotech@gmail.com](https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=frendirobotech@gmail.com) atau [Email    : frendix45@gmail.com](https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=frendix45@gmail.com)
