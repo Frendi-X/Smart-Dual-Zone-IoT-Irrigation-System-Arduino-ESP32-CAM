@@ -65,7 +65,7 @@ ESP32-CAM ← Serial TX/RX → Arduino UNO/Nano
 | 5 | Relay 4 Channel | 1 | Mengendalikan pompa utama & drainase |
 | 6 | Servo Motor SG90 | 1 | Mengarahkan aliran air ke zona A/B |
 | 7 | LCD I2C 16x2 | 1 | Tampilan status sistem |
-| 8 | Pompa air DC / AC | 2 | Irigasi utama & drainase |
+| 8 | Pompa air DC / AC | 3 | Irigasi utama & drainase |
 | 9 | Breadboard, kabel jumper, power supply | - | Pendukung sistem |
 
 ---
