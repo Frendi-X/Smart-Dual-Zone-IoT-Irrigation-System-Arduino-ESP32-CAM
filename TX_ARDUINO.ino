@@ -46,9 +46,9 @@ const int stepDelay = 1;              // -----> Jeda per langkah (ms)
 const int stepSize = 3;               // -----> Ukuran langkah (derajat per update)
 bool servoMoving = false;
 
-const int servoToA = 0;
-const int servoToB = 180;
-const int servoMiddle = 90;
+const int servoToA = 90;
+const int servoToB = 0;
+const int servoMiddle = 45;
 
 /* ---------------------------------- VARIABEL PARSING DATA ------------------------------- */
 String data;
